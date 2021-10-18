@@ -9,6 +9,7 @@ export default function Banner(){
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       backgroundImage="/images/bg.jpeg"
+      mb="10"
     >
       <Flex 
         color="white" 
