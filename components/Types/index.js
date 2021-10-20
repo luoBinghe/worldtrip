@@ -6,7 +6,7 @@ export default function Types(){
       justifyContent="center"
       alignItems="center"
       my="8"
-      pr="6"
+      pr="8"
     >
       <HStack spacing="8rem" alignSelf="center">
         <Image size="sm" align="center" src="/images/nightlife.svg" alt="nigthlife"/>
