@@ -5,6 +5,13 @@ export const theme = extendTheme({
     heading: 'Poppins',
     bg: 'Poppins'
   },
+  components: {
+    Divider: {
+      baseStyle: {
+        borderColor: '#47585B'
+      }
+    }
+  },
   styles: {
     global: {
       body: {

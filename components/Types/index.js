@@ -1,19 +1,20 @@
-import { Flex, Image, Stack } from '@chakra-ui/react'
+import { Flex, Image, HStack, Icon } from '@chakra-ui/react'
 
 export default function Types(){
   return(
     <Flex
-      justifyContent="space-around"
+      justifyContent="center"
       alignItems="center"
       my="8"
-      mx="8"
-      p="8"
+      pr="6"
     >
-      <Image src="/images/nightlife.svg" alt="nigthlife"/>
-      <Image src="/images/beach.svg" alt="beach"/>
-      <Image src="/images/modern.svg" alt="modern"/>
-      <Image src="/images/classic.svg" alt="classic"/>
-      <Image src="/images/more.svg" alt="more"/>
+      <HStack spacing="8rem" alignSelf="center">
+        <Image size="sm" align="center" src="/images/nightlife.svg" alt="nigthlife"/>
+        <Image src="/images/beach.svg" alt="beach"/>
+        <Image src="/images/modern.svg" alt="modern"/>
+        <Image src="/images/classic.svg" alt="classic"/>
+        <Image src="/images/more.svg" alt="more"/>
+      </HStack>
     </Flex>
   )
 }
