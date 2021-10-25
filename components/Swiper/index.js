@@ -5,6 +5,8 @@ import "swiper/css/pagination"
 
 import { Flex, Box, Text } from '@chakra-ui/react'
 
+import Link from 'next/link'
+
 import SwiperCore, {
   Navigation, Pagination
 } from 'swiper';
@@ -28,13 +30,21 @@ export default function SwiperComponent(){
                 backgroundRepeat="no-repeat"
                 backgroundSize="cover"
               >
-                <Text 
-                  fontSize="35" 
-                  fontWeight="bold"
-                  color="white"
-                >
-                  América do Norte
-                </Text>
+                <Link href="/continents/north_america">
+                  <Text
+                    as="a"
+                    fontSize="35" 
+                    fontWeight="bold"
+                    color="white"
+                    cursor="pointer"
+                    transition="filter .2s"
+                    _hover={{
+                      filter: "brightness(90%)"
+                    }}
+                  >
+                    América do Norte
+                  </Text>
+                </Link>
               </Flex>
             </SwiperSlide>
 
@@ -47,13 +57,21 @@ export default function SwiperComponent(){
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                 >
-                  <Text 
-                    fontSize="35" 
-                    fontWeight="bold"
-                    color="white"
-                  >
-                    América do Sul
-                  </Text>
+                  <Link href="/continents/south_america">
+                    <Text 
+                      as="a"
+                      fontSize="35" 
+                      fontWeight="bold"
+                      color="white"
+                      cursor="pointer"
+                      transition="filter .2s"
+                      _hover={{
+                        filter: "brightness(90%)"
+                      }}
+                    >
+                      América do Sul
+                    </Text>
+                  </Link>
                 </Flex>
             </SwiperSlide>
 
@@ -66,13 +84,21 @@ export default function SwiperComponent(){
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                 >
-                  <Text 
-                    fontSize="35" 
-                    fontWeight="bold"
-                    color="white"
-                  >
-                    Ásia
-                  </Text>
+                  <Link href="/continents/asia">
+                    <Text 
+                      as="a"
+                      fontSize="35" 
+                      fontWeight="bold"
+                      color="white"
+                      cursor="pointer"
+                      transition="filter .2s"
+                      _hover={{
+                        filter: "brightness(90%)"
+                      }}
+                    >
+                      Ásia
+                    </Text>
+                  </Link>
                 </Flex>
             </SwiperSlide>
 
@@ -85,13 +111,21 @@ export default function SwiperComponent(){
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                 >
-                  <Text 
-                    fontSize="35" 
-                    fontWeight="bold"
-                    color="white"
-                  >
-                    África
-                  </Text>
+                  <Link href="/continents/africa">
+                    <Text 
+                      as="a"
+                      fontSize="35" 
+                      fontWeight="bold"
+                      color="white"
+                      cursor="pointer"
+                      transition="filter .2s"
+                      _hover={{
+                        filter: "brightness(90%)"
+                      }}
+                    >
+                      África
+                    </Text>
+                  </Link>
                 </Flex>
             </SwiperSlide>
 
@@ -104,13 +138,21 @@ export default function SwiperComponent(){
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                 >
-                  <Text 
-                    fontSize="35" 
-                    fontWeight="bold"
-                    color="white"
-                  >
-                    Europa
-                  </Text>
+                  <Link href="/continents/europe">
+                    <Text 
+                      as="a"
+                      fontSize="35" 
+                      fontWeight="bold"
+                      color="white"
+                      cursor="pointer"
+                      transition="filter .2s"
+                      _hover={{
+                        filter: "brightness(90%)"
+                      }}
+                    >
+                      Europa
+                    </Text>
+                  </Link>
                 </Flex>
             </SwiperSlide>
 
@@ -123,13 +165,21 @@ export default function SwiperComponent(){
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                 >
-                  <Text 
-                    fontSize="35" 
-                    fontWeight="bold"
-                    color="white"
-                  >
-                    Oceania
-                  </Text>
+                  <Link href="/continents/europe">
+                    <Text 
+                      as="a"
+                      fontSize="35" 
+                      fontWeight="bold"
+                      color="white"
+                      cursor="pointer"
+                      transition="filter .2s"
+                      _hover={{
+                        filter: "brightness(90%)"
+                      }}
+                    >
+                      Oceania
+                    </Text>
+                  </Link>
                 </Flex>
             </SwiperSlide>
         </Swiper>
