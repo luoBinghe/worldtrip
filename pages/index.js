@@ -2,7 +2,7 @@ import { Text, Box, Flex, Divider, Center } from '@chakra-ui/react'
 import Header from "../components/Header"
 import Banner from "../components/Banner"
 import Types from '../components/Types'
-import theme from '../styles/theme'
+import SwiperComponent from '../components/Swiper'
 
 export default function Home() {
   return (
@@ -25,6 +25,7 @@ export default function Home() {
           Então escolha seu continente
         </Text>
       </Flex>
+      <SwiperComponent />
     </Box>
   )
 }
