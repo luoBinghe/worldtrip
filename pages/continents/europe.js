@@ -1,5 +1,9 @@
+import Header from "../../components/Header"
+
 export default function Europe(){
   return(
-    <h1>aaaa</h1>
+    <>
+      <Header inRoute={true} />
+    </>
   )
 }
