@@ -1,5 +1,6 @@
 import Header from "../../components/Header"
-import { Flex, Text, HStack } from '@chakra-ui/react'
+import { Flex, Text, HStack, Box } from '@chakra-ui/react'
+import { Cities } from "../../components/Cities"
 
 export default function NorthAmerica(){
     return(
@@ -18,7 +19,7 @@ export default function NorthAmerica(){
         </Flex>
 
         <Flex
-          mt="10"
+          my="10"
           w="100%"
           justifyContent="space-around"
           alignItems="center"
@@ -53,6 +54,12 @@ export default function NorthAmerica(){
             </HStack>
           </Flex>
         </Flex>
+        
+        <Box m="8">
+          <Text fontSize="35" color="gray.600" fontWeight="bold">Cidades +100</Text>
+        </Box>
+
+        <Cities />
       </>
     )
 }
