@@ -4,7 +4,11 @@ import { Cities } from "../../components/Cities"
 
 export default function NorthAmerica(){
     return(
-      <>
+      <Flex 
+        flexDirection="column"
+        alignItems="flex-start"
+        justifyContent="space-around"
+      >
         <Header inRoute={true} />
         <Flex
           w="100%"
@@ -55,11 +59,11 @@ export default function NorthAmerica(){
           </Flex>
         </Flex>
         
-        <Box m="8">
+        <Box m="10" pl="4rem">
           <Text fontSize="35" color="gray.600" fontWeight="bold">Cidades +100</Text>
         </Box>
 
         <Cities />
-      </>
+      </Flex>
     )
 }
