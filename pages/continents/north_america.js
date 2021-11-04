@@ -6,8 +6,8 @@ export default function NorthAmerica(){
     return(
       <Flex 
         flexDirection="column"
-        alignItems="flex-start"
         justifyContent="space-around"
+        bg="whiteAlpha.100"
       >
         <Header inRoute={true} />
         <Flex
@@ -58,12 +58,21 @@ export default function NorthAmerica(){
             </HStack>
           </Flex>
         </Flex>
-        
-        <Box m="10" pl="4rem">
-          <Text fontSize="35" color="gray.600" fontWeight="bold">Cidades +100</Text>
-        </Box>
 
-        <Cities />
+        <Flex
+          flexDir="column"
+          my="6"
+          w="100%"
+          alignItems="center"
+        >
+          <Flex alignItems="flex-start" flexDir="column">
+            <Box m="10">
+              <Text fontSize="35" color="gray.600" fontWeight="bold">Cidades +100</Text>
+            </Box>
+
+            <Cities />
+          </Flex>
+        </Flex>
       </Flex>
     )
 }
